@@ -1,0 +1,4 @@
+---
+# defaults file for crfile_tchfile
+filename: "/tmp/test.file"
+content: "Test content"

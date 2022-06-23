@@ -1,0 +1,16 @@
+---
+- name: Test smpl_file
+  hosts: localhost
+  collections:
+    nb3l77eo.smpl_file
+
+  tasks:
+  - import_role:
+      name: tchfile_role
+
+  - name: Testing tchfile
+    nb3l77eo.smpl_file.tchfile_mod:
+      filename: "/tmp/test2.file"
+
+  - name: Ping
+    ping:

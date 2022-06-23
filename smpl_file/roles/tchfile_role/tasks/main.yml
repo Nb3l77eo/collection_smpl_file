@@ -1,0 +1,6 @@
+---
+# tasks file for tchfile_mod
+- name: Create file
+  nb3l77eo.smpl_file.tchfile_mod:
+    filename: "{{ filename }}"
+    content: "{{ content }}"
